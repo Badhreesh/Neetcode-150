@@ -1,7 +1,7 @@
 # from collections import Counter
 
 
-def main(str1: str, str2: str) -> bool:
+def is_valid_anagram(str1: str, str2: str) -> bool:
     str1_dict, str2_dict = {}, {}
     for char in str1:
         str1_dict[char] = str1_dict[char] + 1 if char in str1_dict else 1
